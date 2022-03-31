@@ -1,0 +1,229 @@
+/* Fuente importada de Google */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* Estilos generales de la página y reseteo de estilos por default */
+html {
+    min-height: 100%;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Estilo enlaces del header */
+header a {
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    margin: 15px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo nav dentro del header */
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Estilo enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Estilo icono menú puntos */
+.icon-puntos {
+    fill: rgb(0,0,0, 0.6);
+}
+
+.icon-puntos:hover {
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Estilo botón acceder de header */
+.boton-header {
+    width: 150%;
+    padding: 10px;
+    color: white;
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+    border-radius: 5px;
+}
+
+.boton-header:hover {
+    border-color: rgba(255, 255, 255, 0.479);
+    cursor: pointer;
+}
+
+/* Estilo contenedor imagen de Google */
+.container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+/* Estilo contenedor barra de búsqueda */
+.container-search {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Estilo barra de búsqueda */
+.search {
+    border: 2px rgb(241, 241, 241) solid;
+    padding: 10px;
+    border-radius: 50px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search:hover {
+    box-shadow: 1px 2px 17px 9px rgba(0,0,0,0.03);
+}
+
+.search-icon {
+    margin-left: 10px;
+    fill: rgba(0, 0, 0, 0.39);
+}
+
+.micro-icon {
+    margin-right: 10px;
+}
+
+/* Contenedor botones */
+.container-botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Estilo botones */
+.boton {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(248, 248, 248);
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.boton a {
+    text-decoration: none;
+    color: black;
+}
+
+.boton:hover {
+    border-color: rgba(255, 255, 255, 0.479);
+}
+
+/* Estilos footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.062);
+}
+
+.primera-linea-footer {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    color: #70757a;
+}
+
+.flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.enlaces-footer {
+    padding: 0 30px;
+}
+
+.enlaces-footer a {
+    color: #70757a;
+    padding: 10px;
+}
+
+.enlaces-footer a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+/* MOBILE */
+@media (min-width: 280px) and (max-width: 319px) {
+    header {
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    header a {
+        margin: 5px;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .boton-header {
+        width: 120%;
+        padding: 10px;
+    }
+
+    .container-img {
+        margin-top: 10%;
+    }
+
+}
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 479px) {
+    header {
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    header a {
+        margin: 5px;
+    }
+
+    .container-img {
+        margin-top: 25%;
+    }
+}
+
+/* TABLET */
+@media (min-width: 479px) and (max-width: 821px) {
+    .container-img {
+        margin-top: 20%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .search {
+        width: 80%;
+    }
+
+    .container-botones {
+        margin-top: 5%;
+    }
+}
