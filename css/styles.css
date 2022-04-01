@@ -98,13 +98,26 @@ a {
     box-shadow: 1px 2px 17px 9px rgba(0,0,0,0.03);
 }
 
+/* Estilo input search dentro de barra de búsqueda */
+.input-search {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+/* Estilo de ícono lupa dentro de barra de búsqueda*/
 .search-icon {
     margin-left: 10px;
     fill: rgba(0, 0, 0, 0.39);
 }
 
+/* Estilo de ícono micrófono dentro de barra de búsqueda */
 .micro-icon {
     margin-right: 10px;
+}
+
+.search-icon, .micro-icon:hover {
+    cursor: pointer;
 }
 
 /* Contenedor botones */
